@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>江科附中2018级七班</title>
+    <script src="../../js/tiaozhuan.js"></script>
+    <!-- <script src="../../js/phone.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/x-icon" href="jkfzxh.ico">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script>
+        /*@cc_on 
+        var _iealwn = {once: 0, outver: 10};
+        document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); 
+        @*/
+    </script>
+</head>
+<body>
+    <div class="xiaohui"></div>
+
+    <div class="daohanglan">
+        <button onclick="window.location.href='jiaoshi.html';">教师团队</button>
+        <button onclick="window.location.href='kecheng.html';">课程表</button>
+        <button onclick="window.location.href='shipin.html';">视频专区</button>
+        <button onclick="window.location.href='../chose.html';">LANGUAGE</button>
+    </div>
+
+    <br>
+    <div class="zhongkao">
+        <br>
+        <h2>距离2021年中考还有：</h2>
+        <hr>
+        <div id="CountMsg " class="HotDate ">
+            <h1>
+                <span id="t_d ">加</span>
+                <span id="t_h ">载</span>               
+                <span id="t_m ">中</span>
+                <span id="t_s ">...</span>
+            </h1>
+        </div>
+        <hr>
+        <script>
+            function getRTime() {
+                var endTime = new Date('2021/6/17 08:30:00'); //截止时间
+                var nowTime = new Date();
+                var t = endTime.getTime() - nowTime.getTime();
+                var d = Math.floor(t / 1000 / 60 / 60 / 24);
+                var h = Math.floor(t / 1000 / 60 / 60 % 24);
+                var m = Math.floor(t / 1000 / 60 % 60);
+                var s = Math.floor(t / 1000 % 60);
+                document.getElementById("t_d ").innerHTML = d + "天 ";
+                document.getElementById("t_h ").innerHTML = h + "时 ";
+                document.getElementById("t_m ").innerHTML = m + "分 ";
+                document.getElementById("t_s ").innerHTML = s + "秒 ";
+            }
+            setInterval(getRTime, 1000);
+        </script>
+        <p>截止时间为2021年6月17日8时30分<br>如有误差敬请谅解</p>
+    </div>
+
+    <div class="xueye">
+        <h2 style="margin-bottom:2px">学业链接</h2>
+        <small>(以下链接均来自<span onclick="open_jyb()">教育部官网</span>)</small><br>
+        <div class="lianjiequ">
+            <div class="xylj">
+                <p class="lj" onclick="open_lj1()">中小学生减负措施</p>
+                <p class="lj" onclick="open_lj2()">取消中考不属实</p>
+                <p class="lj" onclick="open_lj3()">完善安全事故处理机制</p>
+            </div>
+            <div class="xylj">
+                <p class="lj" onclick="open_lj4()">教育事业发展规划</p>
+                <p class="lj" onclick="open_lj5()">严禁有害APP进入校园</p>
+                <p class="lj" onclick="open_lj6()">教育统计数据</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gonggao">
+        <h2 style="margin-bottom:3px;margin-top:50px;">社会主义核心价值观</h2>
+        <h2>
+            富强&nbsp;&nbsp;民主&nbsp;&nbsp;文明&nbsp;&nbsp;和谐 <br>
+            自由&nbsp;&nbsp;平等&nbsp;&nbsp;公正&nbsp;&nbsp;法治 <br>
+            爱国&nbsp;&nbsp;敬业&nbsp;&nbsp;诚信&nbsp;&nbsp;友善 <br>
+        </h2>
+    </div>
+    
+    <div class="dibu">
+        <br><br>
+        <span>江科附中2018级七班</span>
+        <p>Copyright © 2020 TiAd-GT,github</p>
+        <br><br>
+    </div>
+</body>
+</html>

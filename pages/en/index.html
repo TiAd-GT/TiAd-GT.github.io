@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JKFZ 201807</title>
+    <script src="../../js/tiaozhuan.js"></script>
+    <!-- <script src="../../js/phone.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/x-icon" href="jkfzxh.ico">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script>
+        /*@cc_on 
+        var _iealwn = {once: 0, outver: 10};
+        document.write('\x3Cscript id="_iealwn_js" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); 
+        @*/
+    </script>
+</head>
+<body>
+    <div class="xiaohui"></div>
+
+    <div class="daohanglan">
+        <button style="font-family:Yahei;" onclick="window.location.href='jiaoshi.html';">Teachers</button>
+        <button style="font-family:Yahei;" onclick="window.location.href='kecheng.html';">Timetable</button>
+        <button style="font-family:Yahei;" onclick="window.location.href='shipin.html';">Videos</button>
+        <button style="font-family:Yahei;" onclick="window.location.href='../chose.html';">Language</button>
+    </div>
+
+    <br>
+    <div class="zhongkao">
+        <br>
+        <h2>before the 2021 Zhongkao</h2>
+        <hr>
+        <div id="CountMsg " class="HotDate ">
+            <h1>
+                <span id="t_d ">Loading</span>
+                <span id="t_h ">.</span>               
+                <span id="t_m ">.</span>
+                <span id="t_s ">.</span>
+            </h1>
+        </div>
+        <hr>
+        <script>
+            function getRTime() {
+                var endTime = new Date('2021/6/17 08:30:00'); //截止时间
+                var nowTime = new Date();
+                var t = endTime.getTime() - nowTime.getTime();
+                var d = Math.floor(t / 1000 / 60 / 60 / 24);
+                var h = Math.floor(t / 1000 / 60 / 60 % 24);
+                var m = Math.floor(t / 1000 / 60 % 60);
+                var s = Math.floor(t / 1000 % 60);
+                document.getElementById("t_d ").innerHTML = d + "D ";
+                document.getElementById("t_h ").innerHTML = h + "H ";
+                document.getElementById("t_m ").innerHTML = m + "M ";
+                document.getElementById("t_s ").innerHTML = s + "S ";
+            }
+            setInterval(getRTime, 1000);
+        </script>
+        <p>Zhongkao<br>(Senior high school entrance examination)</p>
+    </div>
+
+    <div class="xueye">
+        <h2 style="margin-bottom:2px">Academic links</h2>
+        <small>(By <span onclick="open_jyb()">Ministry of Education</span>)</small><br>
+        <div class="lianjiequ">
+            <div class="xylj">
+                <p class="lj" onclick="open_lj1()">中小学生减负措施</p>
+                <p class="lj" onclick="open_lj2()">取消中考不属实</p>
+                <p class="lj" onclick="open_lj3()">完善安全事故处理机制</p>
+            </div>
+            <div class="xylj">
+                <p class="lj" onclick="open_lj4()">教育事业发展规划</p>
+                <p class="lj" onclick="open_lj5()">严禁有害APP进入校园</p>
+                <p class="lj" onclick="open_lj6()">教育统计数据</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gonggao">
+        <h2 style="margin-bottom:3px;margin-top:50px;">The core values of <br>Chinese socialism</h2>
+        <span style="font-size:25pt;">
+            prosperity &nbsp;democracy &nbspcivility &nbsp;harmony<br>
+            freedom &nbsp;equality &nbsp;justice &nbsp;the rule of law<br>
+            patriotism &nbsp;dedication &nbsp;integrity &nbsp;friendship<br>
+        </span>
+    </div>
+    
+    <div class="dibu">
+        <br><br>
+        <span>江科附中2018级七班 (JKFZ 201807)</span>
+        <p>Copyright © 2020 TiAd-GT,github</p>
+        <br><br>
+    </div>
+</body>
+</html>
