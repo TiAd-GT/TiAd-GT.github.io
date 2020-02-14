@@ -1,0 +1,40 @@
+.wj{
+    width:650px;
+    height:160px;
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-bottom:30px;
+    border:2px #333 solid; 
+    color:#333;
+    text-align:center;
+    font-family:STKaiti;
+    font-size:20pt;
+    transition:color 0.5s,border 1s;
+}
+
+.wj:hover{
+    border:2px #07913B solid; 
+    color:#07913B;
+}
+
+.wj > .xiazai{
+    border-radius:100px;
+    height:50px; 
+    width:300px;
+    background-color:white;
+    color:#333;
+    border:1px #333 solid;
+    font-family:STKaiti;
+    font-size:20pt;    
+    transition:color 0.5s,border 1s,background-color 1s;
+}
+
+.wj:hover > .xiazai{
+    border:1px #07913B solid; 
+    color:#07913B;
+}
+
+.wj > .xiazai:hover{
+    background-color:#07913B; 
+    color:white;
+}

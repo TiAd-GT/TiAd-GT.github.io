@@ -1,0 +1,51 @@
+.kcbjkfz{
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: center; 
+    margin-bottom:100px;
+    font-family:STKaiti;
+    font-size:25pt;
+}
+
+.biaotou{
+    font-family:STKaiti;
+    font-size:35pt;
+    text-align: center; 
+    transition:color 1s;
+}
+
+.biaotou:hover{
+    color:#07913B;
+}
+
+th{
+    font-weight:normal;
+    background-color:#333;
+    color:white;
+    transition:background-color 1s;
+}
+
+td{
+    width:150px;
+    background-color:#b8b8b8;
+    transition:background-color 1s,color 0.5s;
+}
+
+td:hover,th:hover{
+    background-color:#07913B;
+    color:white;
+}
+
+.jieci{
+    background-color:#a5a5a5;
+}
+
+#beizhu{
+    background-color:#dddddd;
+    font-size:10pt;
+    transition:background-color 1s,color 0.5s;
+}
+
+#beizhu:hover{
+    background-color:#07913B;
+}

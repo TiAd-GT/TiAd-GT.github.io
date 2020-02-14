@@ -1,0 +1,198 @@
+body{
+    margin:0px;
+    padding:0px;
+    height:100%;
+}
+
+.con{
+    position: fixed;
+    height:10000px;
+    position: absolute;
+    background-color:#333;
+    text-align: center;
+    width:100%;
+    color:white;
+    padding-top:150px; 
+    font-family:STKaiti;
+}
+
+
+.yuyan{
+    text-align:center;
+    width:100px;
+    height:100px;
+    background-color:#333;
+    color:white;
+    font-family:STKaiti;
+    padding:10px;
+    font-size:15pt;
+}
+
+
+.xiaohui{
+    width:650px;
+    height:150px;
+    background:url(../img/xh_bl.jpg) center no-repeat;
+    background-size:100% auto;
+    margin-left:auto; 
+    margin-right:auto; 
+    transition:background-image 1s;
+}
+.xiaohui:hover{
+    background:url(../img/xh.jpg) center no-repeat;
+    background-size:100% auto;
+}
+
+.daohanglan{
+    width:100%;
+    height:60px;
+    background-color:#333;
+    margin:0px;
+    padding:0px;
+    margin-bottom:30px;
+    text-align:center;
+    transition:color 0.5s,background-color 1s,border 1s;
+}
+.daohanglan:hover{
+    background-color:#07913B;
+}
+
+.daohanglan > button{
+    width:160px;
+    height:100%;
+    margin:0px;
+    color:white;
+    background-color:#333;
+    border:1px #333 solid; 
+    font-size:20pt;
+    font-family:STKaiti;
+    transition:color 0.5s,background-color 1s,border 1s;
+    cursor:pointer;
+}
+.daohanglan:hover > button{
+    border:1px #07913B solid;
+    color:white;
+    background-color:#07913B;
+}
+.daohanglan > button:hover{
+    border:1px white solid;
+    background-color:white;
+    color:#07913B;
+}
+
+
+.zhongkao{
+    width:650px;
+    height:450px;
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-bottom:30px;
+    border:2px #333 solid; 
+    color:#333;
+    text-align:center;
+    font-family:STKaiti;
+    font-size:20pt;
+    transition:color 0.5s,border 1s,box-shadow 1s;
+}
+
+.zhongkao:hover{
+    border:2px rgb(255, 71, 71) solid; 
+    color:rgb(255, 71, 71);
+    box-shadow: 10px 10px 5px rgb(255, 71, 71);
+}
+
+.zhongkao > hr{
+    width:500px;
+    height:1px;
+    border:none;
+    background-color:#333;
+    transition:background-color 1s;
+}
+.zhongkao:hover > hr{
+    background-color:rgb(255, 71, 71); 
+}
+
+.djs{
+    width:150px;
+    height:60px;
+    border: #333 2px solid;
+    border-radius:20px;
+    float: left;
+}
+
+
+.xueye{
+    width:650px;
+    height:400px;
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-bottom:30px;
+    border:2px #333 solid; 
+    color:#333;
+    text-align:center;
+    font-family:STKaiti;
+    font-size:20pt;
+    transition:color 0.5s,border 1s,box-shadow 1s;
+}
+.xueye:hover{
+    border:2px rgb(0, 119, 255) solid; 
+    color:rgb(0, 119, 255);
+    box-shadow: 10px 10px 5px rgb(0, 119, 255);
+}
+
+.xueye > small > span{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+.xueye > .lj{
+    font-size:20pt;
+}
+
+.xueye > .lianjiequ{
+    width:80%;
+    margin-left:auto; 
+    margin-right:auto; 
+}
+
+.xueye > .lianjiequ > .xylj{
+    margin-left:5%;
+    width:45%;
+    text-align:left;
+    cursor:pointer;
+    float:left;
+}
+
+
+.gonggao{
+    width:650px;
+    height:350px;
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-bottom:30px;
+    border:2px #333 solid; 
+    color:#333;
+    text-align:center;
+    font-family:STKaiti;
+    font-size:20pt;
+    transition:color 0.5s,border 1s,box-shadow 1s;
+}
+.gonggao:hover{
+    border:2px orange solid; 
+    color:orange;
+    box-shadow: 10px 10px 5px orange;
+}
+
+
+.dibu{
+    background-color:#333;
+    color:white;
+    text-align:center;
+    margin:0px;
+    transition:background-color 1s,color 0.5s;
+}
+.dibu:hover{
+    background-color:#07913B;
+    color:white;
+}
+

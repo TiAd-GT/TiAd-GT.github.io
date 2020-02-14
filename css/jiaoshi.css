@@ -1,0 +1,33 @@
+.zhuyao{
+    width:650px;
+    border:2px #333 solid; 
+    margin-left:auto; 
+    margin-right:auto; 
+    text-align:center;
+    font-family:STKaiti;
+    color: #333;
+    margin-bottom:30px;
+    transition:border 1s,color 1s;
+}
+
+.zhuyao:hover{
+    border:2px #07913B solid; 
+}
+
+.ls{
+    width:85%;
+    height:650px;
+    margin-left:auto; 
+    margin-right:auto; 
+    font-size:18pt;
+}
+
+.tp{
+    width:35%;
+    float:right;
+}
+
+.wb{
+    width:60%;
+    float:left;;
+}
