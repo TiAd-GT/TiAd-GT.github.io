@@ -7,59 +7,123 @@
     <title>生日快乐</title>
     <style>
     #body{
-        background-color:#fd8fa1;
+        background-color:#FF6666;
         text-align:center;
-        transition:all 1s;
+        margin:0px;
+        padding:0px;
+        transition:all 3s;
     }
     #main1,#main2,#main3{
-        font-family:MingLiU;
+        font-family:'Times New Roman', Times, serif;
         color:white;
-        font-size:20pt;
+        font-size:25pt;
         transition:all 0.5s;
+        opacity: 1.0 ;
+    }
+    #ColorChange{
+        width:100%;
+        height:100px;
+        padding-top:25px;
+        background-color:white;
+        color:#FF6666;
+        font-size:20pt;
+        font-family:'Times New Roman', Times, serif;
+        position:fixed;
+        bottom:0px;
+        cursor:pointer;
+        transition:all 3s;
     }
     </style>
     <script> 
         setTimeout(function(){
-            document.getElementById("main2").style.color="#fd8fa1";
+            document.getElementById("main2").style.opacity="0.0";
         }, 1500);
         setTimeout(function(){
-            document.getElementById("main2").innerHTML="text";
+            document.getElementById("main2").innerHTML="hello,world";
         }, 2000);
         setTimeout(function(){
-            document.getElementById("main2").style.color="white";
+            document.getElementById("main2").style.opacity="1.0";
         }, 2500);
         setTimeout(function(){
-            document.getElementById("main2").style.color="#fd8fa1";
+            document.getElementById("main2").style.opacity="0.0";
         }, 5000);
         setTimeout(function(){
-            document.getElementById("main2").innerHTML="text";
+            document.getElementById("main2").innerHTML="hello,world";
         }, 5500);
         setTimeout(function(){
-            document.getElementById("main2").style.color="white";
+            document.getElementById("main2").style.opacity="1.0";
         }, 6000);
         setTimeout(function(){
-            document.getElementById("main2").style.color="#fd8fa1";
+            document.getElementById("main2").style.opacity="0.0";
         }, 10000);
         setTimeout(function(){
-            document.getElementById("main2").innerHTML="text";
+            document.getElementById("main2").innerHTML="hello,world";
         }, 10500);
         setTimeout(function(){
-            document.getElementById("main2").style.color="white";
+            document.getElementById("main2").style.opacity="1.0";
         }, 11000);
         setTimeout(function(){
-            document.getElementById("main2").style.color="#fd8fa1";
+            document.getElementById("main2").style.opacity="0.0";
         }, 15000);
         setTimeout(function(){
-            document.getElementById("main2").innerHTML="text";
+            document.getElementById("main2").innerHTML="hello,world";
         }, 15500);
         setTimeout(function(){
-            document.getElementById("main2").style.color="white";
+            document.getElementById("main2").style.opacity="1.0";
         }, 16000);
     </script>
 </head>
-<body id="body"><br><br><br><br><br><br><br>
-    <h1 id="main1">--------------------</h1>
-    <h1 id="main2" style="font-size:30pt;">生日快乐，朱为</h1>
-    <h1 id="main3">--------------------</h1>
+<body id="body"><br><br><br><br><br>
+    <p id="main1">◆★◆★◆★◆★◆★◆★◆</p>
+    <p id="main2" style="font-size:30pt;">生日快乐，朱为</p>
+    <p id="main3">◆★◆★◆★◆★◆★◆★◆</p>
+    <div id="ColorChange" onclick="colorChange()">
+        点击切换颜色<br><small>(有1%的概率与上一颜色相同)</small>
+    </div>
+    <script>    
+    function colorChange(){
+        var color = Math.floor(Math.random()*10) + 1;
+        if (color==1){
+            document.getElementById("body").style.backgroundColor="#FF6666";
+            document.getElementById("ColorChange").style.color="#FF6666";
+        }
+        if (color==2){
+            document.getElementById("body").style.backgroundColor="#0099CC";
+            document.getElementById("ColorChange").style.color="#0099CC";
+        }
+        if (color==3){
+            document.getElementById("body").style.backgroundColor="#996699";
+            document.getElementById("ColorChange").style.color="#996699";
+        }
+        if (color==4){
+            document.getElementById("body").style.backgroundColor="#FF9900";
+            document.getElementById("ColorChange").style.color="#FF9900";
+        }
+        if (color==5){
+            document.getElementById("body").style.backgroundColor="#33CC33";
+            document.getElementById("ColorChange").style.color="#33CC33";
+        }
+        if (color==6){
+            document.getElementById("body").style.backgroundColor="#009999";
+            document.getElementById("ColorChange").style.color="#009999";
+        }
+        if (color==7){
+            document.getElementById("body").style.backgroundColor="#999966";
+            document.getElementById("ColorChange").style.color="#999966";
+        }
+        if (color==8){
+            document.getElementById("body").style.backgroundColor="#990033";
+            document.getElementById("ColorChange").style.color="#990033";
+        }
+        if (color==9){
+            document.getElementById("body").style.backgroundColor="#CC3333";
+            document.getElementById("ColorChange").style.color="#CC3333";
+        }
+        if (color==10){
+            document.getElementById("body").style.backgroundColor="#99CC00";
+            document.getElementById("ColorChange").style.color="#99CC00";
+        }
+    }
+    </script>
 </body>
 </html>
